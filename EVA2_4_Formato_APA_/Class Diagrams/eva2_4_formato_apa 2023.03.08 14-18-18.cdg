@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="eva2_4_formato_apa">
+  <ClassDiagramComponents>
+    <Class name="Articulo" package="eva2_4_formato_apa" visibility="public" xPosition="76.0" yPosition="312.0">
+      <Fields>
+        <Field name="editor" type="String" visibility="private"/>
+        <Field name="editorial" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="editor"/>
+          <Argument type="String" name="editorial"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getEditor" returnType="String" visibility="public"/>
+        <Method name="setEditor" returnType="void" visibility="public">
+          <Argument type="String" name="editor"/>
+        </Method>
+        <Method name="getEditorial" returnType="String" visibility="public"/>
+        <Method name="setEditorial" returnType="void" visibility="public">
+          <Argument type="String" name="editorial"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Datos_Generales" package="eva2_4_formato_apa" visibility="public" xPosition="404.0" yPosition="130.0">
+      <Fields>
+        <Field name="autor" type="String" visibility="private"/>
+        <Field name="titulo" type="String" visibility="private"/>
+        <Field name="año" type="int" visibility="private"/>
+        <Field name="mes" type="String" visibility="private"/>
+        <Field name="dia" type="int" visibility="private"/>
+        <Field name="ciudad" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="autor"/>
+          <Argument type="String" name="titulo"/>
+          <Argument type="int" name="año"/>
+          <Argument type="String" name="mes"/>
+          <Argument type="int" name="dia"/>
+          <Argument type="String" name="ciudad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAutor" returnType="String" visibility="public"/>
+        <Method name="setAutor" returnType="void" visibility="public">
+          <Argument type="String" name="autor"/>
+        </Method>
+        <Method name="getTitulo" returnType="String" visibility="public"/>
+        <Method name="setTitulo" returnType="void" visibility="public">
+          <Argument type="String" name="titulo"/>
+        </Method>
+        <Method name="getAño" returnType="int" visibility="public"/>
+        <Method name="setAño" returnType="void" visibility="public">
+          <Argument type="int" name="año"/>
+        </Method>
+        <Method name="getMes" returnType="String" visibility="public"/>
+        <Method name="setMes" returnType="void" visibility="public">
+          <Argument type="String" name="mes"/>
+        </Method>
+        <Method name="getDia" returnType="int" visibility="public"/>
+        <Method name="setDia" returnType="void" visibility="public">
+          <Argument type="int" name="dia"/>
+        </Method>
+        <Method name="getCiudad" returnType="String" visibility="public"/>
+        <Method name="setCiudad" returnType="void" visibility="public">
+          <Argument type="String" name="ciudad"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EVA2_4_Formato_APA" package="eva2_4_formato_apa" visibility="public" xPosition="556.0" yPosition="17.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Informe" package="eva2_4_formato_apa" visibility="public" xPosition="76.0" yPosition="17.0">
+      <Fields>
+        <Field name="departamento" type="String" visibility="private"/>
+        <Field name="tipoInforme" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="departamento"/>
+          <Argument type="String" name="tipoInforme"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDepartamento" returnType="String" visibility="public"/>
+        <Method name="setDepartamento" returnType="void" visibility="public">
+          <Argument type="String" name="departamento"/>
+        </Method>
+        <Method name="getTipoInforme" returnType="String" visibility="public"/>
+        <Method name="setTipoInforme" returnType="void" visibility="public">
+          <Argument type="String" name="tipoInforme"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Libro" package="eva2_4_formato_apa" visibility="public" xPosition="933.0" yPosition="335.0">
+      <Fields>
+        <Field name="editor" type="String" visibility="private"/>
+        <Field name="numPag" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="editor"/>
+          <Argument type="int" name="numPag"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getEditor" returnType="String" visibility="public"/>
+        <Method name="setEditor" returnType="void" visibility="public">
+          <Argument type="String" name="editor"/>
+        </Method>
+        <Method name="getNumPag" returnType="int" visibility="public"/>
+        <Method name="setNumPag" returnType="void" visibility="public">
+          <Argument type="int" name="numPag"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Sitio_Web" package="eva2_4_formato_apa" visibility="public" xPosition="933.0" yPosition="17.0">
+      <Fields>
+        <Field name="URL" type="String" visibility="private"/>
+        <Field name="colaboradores" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="URL"/>
+          <Argument type="String" name="colaboradores"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getURL" returnType="String" visibility="public"/>
+        <Method name="setURL" returnType="void" visibility="public">
+          <Argument type="String" name="URL"/>
+        </Method>
+        <Method name="getColaboradores" returnType="String" visibility="public"/>
+        <Method name="setColaboradores" returnType="void" visibility="public">
+          <Argument type="String" name="colaboradores"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="eva2_4_formato_apa.Libro" target="eva2_4_formato_apa.Datos_Generales"/>
+    <IsRelation name="is" source="eva2_4_formato_apa.Articulo" target="eva2_4_formato_apa.Datos_Generales"/>
+    <IsRelation name="is" source="eva2_4_formato_apa.Sitio_Web" target="eva2_4_formato_apa.Datos_Generales"/>
+    <IsRelation name="is" source="eva2_4_formato_apa.Informe" target="eva2_4_formato_apa.Datos_Generales"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
