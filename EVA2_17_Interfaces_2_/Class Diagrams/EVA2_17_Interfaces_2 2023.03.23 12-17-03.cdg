@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EVA2_17_Interfaces_2">
+  <ClassDiagramComponents>
+    <Class name="EVA2_17_Interfaces_2" package="eva2_17_interfaces_2" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Prueba" package="eva2_17_interfaces_2" visibility="public" xPosition="587.0" yPosition="202.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="C" returnType="void" visibility="public"/>
+        <Method name="A" returnType="void" visibility="public"/>
+        <Method name="B" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="IntA" package="eva2_17_interfaces_2" visibility="public" xPosition="213.0" yPosition="273.0">
+      <Methods>
+        <Method name="A" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="IntB" package="eva2_17_interfaces_2" visibility="public" xPosition="67.0" yPosition="137.0">
+      <Methods>
+        <Method name="B" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Interface>
+    <Interface name="IntC" package="eva2_17_interfaces_2" visibility="public" xPosition="333.0" yPosition="31.0">
+      <Methods>
+        <Method name="C" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="eva2_17_interfaces_2.IntC" target="eva2_17_interfaces_2.IntA"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_17_interfaces_2.Prueba" target="eva2_17_interfaces_2.IntC"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
