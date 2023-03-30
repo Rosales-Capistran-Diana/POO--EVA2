@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EVA2_21_Polimorfismo_Vehiculos">
+  <ClassDiagramComponents>
+    <Class name="EVA2_21_Polimorfismo_Vehiculos" package="eva2_21_polimorfismo_vehiculos" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="modificarVel" returnType="void" visibility="public" isStatic="true">
+          <Argument type="ControlarDatos" name="datos"/>
+          <Argument type="int" name="vel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="vehiculo" package="eva2_21_polimorfismo_vehiculos" visibility="public" xPosition="477.0" yPosition="20.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="velocidad" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="marca"/>
+          <Argument type="int" name="velocidad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="setMarca" returnType="void" visibility="public">
+          <Argument type="String" name="marca"/>
+        </Method>
+        <Method name="getVelocidad" returnType="int" visibility="public"/>
+        <Method name="setVelocidad" returnType="void" visibility="public">
+          <Argument type="int" name="velocidad"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Automovil" package="eva2_21_polimorfismo_vehiculos" visibility="public" xPosition="20.0" yPosition="305.0">
+      <Fields>
+        <Field name="modelo" type="String" visibility="private"/>
+        <Field name="año" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="modelo"/>
+          <Argument type="int" name="año"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="int" name="velocidad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getModelo" returnType="String" visibility="public"/>
+        <Method name="setModelo" returnType="void" visibility="public">
+          <Argument type="String" name="modelo"/>
+        </Method>
+        <Method name="getAño" returnType="int" visibility="public"/>
+        <Method name="setAño" returnType="void" visibility="public">
+          <Argument type="int" name="año"/>
+        </Method>
+        <Method name="CambiarVelocidad" returnType="void" visibility="public">
+          <Argument type="int" name="cambio"/>
+        </Method>
+        <Method name="tablero" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Bicicleta" package="eva2_21_polimorfismo_vehiculos" visibility="public" xPosition="848.0" yPosition="280.0">
+      <Fields>
+        <Field name="Tipo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Tipo"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="int" name="velocidad"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getTipo" returnType="String" visibility="public"/>
+        <Method name="setTipo" returnType="void" visibility="public">
+          <Argument type="String" name="Tipo"/>
+        </Method>
+        <Method name="CambiarVelocidad" returnType="void" visibility="public">
+          <Argument type="int" name="cambio"/>
+        </Method>
+        <Method name="tablero" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="ControlarDatos" package="eva2_21_polimorfismo_vehiculos" visibility="public" xPosition="456.0" yPosition="386.0">
+      <Methods>
+        <Method name="CambiarVelocidad" returnType="void" visibility="package">
+          <Argument type="int" name="cambio"/>
+        </Method>
+        <Method name="tablero" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_21_polimorfismo_vehiculos.Automovil" target="eva2_21_polimorfismo_vehiculos.ControlarDatos"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eva2_21_polimorfismo_vehiculos.Bicicleta" target="eva2_21_polimorfismo_vehiculos.ControlarDatos"/>
+    <IsRelation name="is" source="eva2_21_polimorfismo_vehiculos.Bicicleta" target="eva2_21_polimorfismo_vehiculos.vehiculo"/>
+    <UseRelation source="eva2_21_polimorfismo_vehiculos.EVA2_21_Polimorfismo_Vehiculos" target="eva2_21_polimorfismo_vehiculos.ControlarDatos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="eva2_21_polimorfismo_vehiculos.Automovil" target="eva2_21_polimorfismo_vehiculos.vehiculo"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
